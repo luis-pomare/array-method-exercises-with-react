@@ -3,14 +3,13 @@ import DynamicData from './dynamic-data';
 import { useState } from 'react';
 import data from '../store.js';
 
-console.log(data);
 export default function Main() {
   const [state, setState] = useState(data);
+  const { companies, ages } = state;
   return (
     <main>
-      <StaticData />
+      <StaticData companies={companies} ages={ages} />
       <DynamicData />
-      {state.ages[0]}
     </main>
   );
 }
