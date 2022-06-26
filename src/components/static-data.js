@@ -4,7 +4,7 @@ export default function staticData(props) {
   const { companies, ages } = props;
   return (
     <section>
-      <h2>Companies full info</h2>
+      <h2>Complete information</h2>
       <StaticTable companies={companies} ages={ages} />
     </section>
   );

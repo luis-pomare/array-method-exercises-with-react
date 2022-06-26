@@ -1,4 +1,4 @@
-export default function StaticTable(props) {
+export default function dynamicTable(props) {
   const { companies, ages } = props;
   return (
     <>
