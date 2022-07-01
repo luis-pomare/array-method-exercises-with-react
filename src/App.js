@@ -6,18 +6,20 @@ import { useState } from 'react';
 
 function App() {
   const [state, setState] = useState(data);
-  const { companies, ages } = state;
-  const clickHandler = () => {
-    setState({ ...state, method: 'none' });
+
+  const clickHandler = (method) => {
+    setState({ ...state, method: method });
+    console.log(state);
   };
+
   return (
     <div className='App'>
       <Header
         onClick={() => {
-          clickHandler();
+          clickHandler('none');
         }}
       />
-      <Main companies={companies} ages={ages} />
+      <Main state={state} />
     </div>
   );
 }

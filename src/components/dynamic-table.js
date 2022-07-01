@@ -1,5 +1,5 @@
 export default function dynamicTable(props) {
-  const { companies, ages } = props;
+  const { companies, ages } = props.state;
   return (
     <>
       <table>
