@@ -1,10 +1,10 @@
 import DynamicTable from './dynamic-table';
 
-export default function dynamicData(props) {
+export default function dynamicData() {
   return (
     <section>
-      <h2>Selected infomation</h2>
-      <DynamicTable state={props.state} />
+      <h2>Modified infomation</h2>
+      <DynamicTable />
     </section>
   );
 }

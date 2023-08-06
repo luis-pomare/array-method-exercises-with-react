@@ -1,5 +1,7 @@
-export default function StaticTable(props) {
-  const { companies, ages } = props.state;
+import data from "../store";
+
+export default function StaticTable() {
+  const { companies, ages } = data;
   return (
     <>
       <table>

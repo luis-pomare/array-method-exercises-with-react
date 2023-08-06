@@ -1,5 +1,7 @@
-export default function dynamicTable(props) {
-  const { companies, ages } = props.state;
+import data from "../store";
+
+export default function dynamicTable() {
+  const { companies, ages } = data;
   return (
     <>
       <table>
